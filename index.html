@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.ico"/>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>CATALOGUE</h1>
+        <div class="container">
+            <figure class="card" data-url="card1.html">
+                <img src="image1.jpg" alt="">
+                <figcaption>Card 1</figcaption>
+            </figure>
+            <figure class="card" data-url="card2.html">
+                <img src="image2.jpeg" alt="">
+                <figcaption>Card 2</figcaption>
+            </figure>
+            <figure class="card" data-url="card3.html">
+                <img src="image3.jpeg" alt="">
+                <figcaption>Card 3</figcaption>
+            </figure>
+            <figure class="card" data-url="card4.html">
+                <img src="image4.jpeg" alt="">
+                <figcaption>Card 4</figcaption>
+            </figure>
+            <figure class="card" data-url="card5.html">
+                <img src="image5.jpeg" alt="">
+                <figcaption>Card 5</figcaption>
+            </figure>
+            <figure class="card" data-url="card6.html">
+                <img src="image6.jpeg" alt="">
+                <figcaption>Card 6</figcaption>
+            </figure>
+            <figure class="card" data-url="card7.html">
+                <img src="image7.jpeg" alt="">
+                <figcaption>Card 7</figcaption>
+            </figure>
+            <figure class="card" data-url="card8.html">
+                <img src="image8.jpeg" alt="">
+                <figcaption>Card 8</figcaption>
+            </figure>
+            <figure class="card" data-url="card9.html">
+                <img src="image9.jpeg" alt="">
+                <figcaption>Card 9</figcaption>
+            </figure>
+            <figure class="card" data-url="card10.html">
+                <img src="image5.jpeg" alt="">
+                <figcaption>Card 10</figcaption>
+            </figure>
+            <figure class="card" data-url="card11.html">
+                <img src="image3.jpeg" alt="">
+                <figcaption>Card 11</figcaption>
+            </figure>
+            <figure class="card" data-url="card12.html">
+                <img src="image8.jpeg" alt="">
+                <figcaption>Card 12</figcaption>
+            </figure>
+        </div>
+        <div class="footer">
+            <p>Made with ♡ by Agam | Copyright &copy; 2024</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const cards = document.querySelectorAll(".card");
+
+            cards.forEach(card => {
+                card.addEventListener("click", function() {
+                    const url = this.getAttribute("data-url");
+                    window.location.href = url;
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
